@@ -1,15 +1,17 @@
 <div class="container">
-    <h2>Conhecimentos</h2>
-    <ul>
-        @for (item of arrayConhecimento(); track item) {
-        <li>
-            <img 
-                [src]="item.src"
-                [alt]="item.alt"
-                loading="lazy"
-                width="22px" 
-                height="24px">
-        </li>
+  <h2>Conhecimentos</h2>
+  <ul>
+    @for (conhecimento of arrayConhecimentos(); track conhecimento) {
+    <li>
+      <img
+        [src]="conhecimento.src"
+        [alt]="conhecimento.alt"
+        loading="lazy"
+        width="70px"
+        height="30px"
+      />
+      <span>{{ conhecimento.nome }}</span>
+    </li>
     }
-    </ul>
+  </ul>
 </div>

@@ -1,4 +1,5 @@
 export interface IConhecimento {
-    src: string;
-    alt: string;
+  src: string;
+  alt: string;
+  nome: string;
 }
